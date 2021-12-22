@@ -1,0 +1,18 @@
+[package]
+name = "rust-web-server-wasm"
+version = "0.1.0"
+edition = "2021"
+autotests = false
+authors = ["Simon Osaka <geniusmickymouse@qq.com>"]
+include = ["src/**/*", "Cargo.toml", "README.md"]
+description = "A example of rust wasm"
+repository = "https://github.com/SimonOsaka/rust-web-server-wasm"
+documentation = ""
+homepage = ""
+keywords = ["wasm"]
+categories = []
+license = "MIT"
+readme = "README.md"
+
+[lib]
+crate-type = ["cdylib"]
