@@ -16,3 +16,15 @@ readme = "README.md"
 
 [lib]
 crate-type = ["cdylib"]
+
+[profile.dev]
+lto = false
+opt-level = 0
+overflow-checks = true
+incremental = true
+
+[profile.release]
+lto = "thin"
+opt-level = 'z'
+overflow-checks = false
+incremental = false
