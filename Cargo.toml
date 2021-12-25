@@ -2,7 +2,6 @@
 name = "rust-web-server-wasm"
 version = "0.1.0"
 edition = "2021"
-autotests = false
 authors = ["Simon Osaka <geniusmickymouse@qq.com>"]
 include = ["src/**/*", "Cargo.toml", "README.md"]
 description = "A example of rust wasm"
@@ -16,6 +15,9 @@ readme = "README.md"
 
 [lib]
 crate-type = ["cdylib"]
+
+[dependencies]
+wasmer = "2.1"
 
 [profile.dev]
 lto = false
