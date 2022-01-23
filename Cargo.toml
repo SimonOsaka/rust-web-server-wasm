@@ -16,7 +16,7 @@ readme = "README.md"
 [lib]
 crate-type = ["cdylib"]
 
-[dependencies]
+[dev-dependencies]
 wasmer = "2.1"
 
 [profile.dev]
